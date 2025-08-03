@@ -168,17 +168,17 @@ export const skillsImg = [
     title: "TypeScript",
   }, 
   {
-    id: 8,
+    id: 11,
     img: jsonImg,
     title: "Json",
   },
   {
-    id: 9,
+    id: 12,
     img: vercleimg,
     title: "Vercle",
   },
   {
-    id: 10,
+    id: 13,
     img: githubImg,
     title: "GitHub",
   },

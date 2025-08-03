@@ -41,11 +41,11 @@ function Skills() {
               key={item.id}
               className="flex justify-center items-center flex-col  text-stone-100 font-bold text-xs "
             >
-              <div className="shadow-sm shadow-[#e76f51] w-32 h-32 flex justify-center items-center flex-col">
+              <div className="shadow-sm text-sm shadow-[#e76f51] w-32 h-32 flex justify-center items-center flex-col max-sm:w-36 max-sm:h-36 max-sm:text-xs">
                 <img
                   src={item.img}
                   alt="React"
-                  className="w-14 object-contain my-2"
+                  className="w-14 object-contain my-2 "
                 />
                 <p>{item.title}</p>
               </div>

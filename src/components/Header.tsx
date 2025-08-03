@@ -8,10 +8,10 @@ function Header() {
       <img
         src={image}
         alt={image}
-        className="absolute rounded-full w-72 h-72 left-80 z-50  max-sm:left-[135px] max-sm:top-12 max-sm:w-52 max-sm:h-52"
+        className="absolute rounded-full w-72 h-72 left-80 z-50  max-sm:left-[100px] max-sm:top-24 max-sm:w-52 max-sm:h-52"
       />
       <div className="bg-[#e76f51] h-screen w-[30%] flex flex-col justify-center items-center space-y-[540px] max-sm:w-full max-sm:h-52">
-        <img src={logoH} alt="hossein kamali" className="z-50 max-sm:mb-40"/>
+        <img src={logoH} alt="hossein kamali" className="z-50 max-sm:mb-32"/>
         <ul className="flex justify-center  h-full space-x-4 pb-3 max-sm:hidden ">
           {socialMedia.map((item) => (
             <li key={item.id}>
