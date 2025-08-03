@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-swiper .swiper-wrapper {
+  display: flex !important;
+}
+
+.my-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+@font-face {
+  font-family: 'Robot';
+  src: url('/public/font/BitcountPropSingleInterRoboto/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Robot';
+  background-color: #264653;
+  overflow-x: hidden;
+}
