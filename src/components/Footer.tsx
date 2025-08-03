@@ -11,39 +11,44 @@ function Footer() {
       title: "Email",
       icon: <EmailIcon />,
       path: "mailto:hosseinkamalirousta1984@email.com",
+      hoverClass:"hover:text-orange-300"
     },
     {
       title: "GitHub",
       icon: <GitHubIcon />,
       path: "https://github.com/HosseinKamali",
+      hoverClass:"hover:text-stone-900"
     },
     {
-      title: "GitHub",
+      title: "Instagram",
       icon: <InstagramIcon />,
       path: "https://www.instagram.com/web.developer.front.end?igsh=MXVtb3Q2OWR4dDdkaQ==",
+      hoverClass:"hover:text-pink-400"
     },
     {
       title: "Linkdin",
       icon: <LinkedInIcon />,
       path: "https://www.linkedin.com/in/hossein-kamali-rousta/",
+      hoverClass:"hover:text-sky-400"
     },
   ];
   return (
-    <div className="h-24 border-t-2 border-[#e76f51] flex items-center  ">
+    <div className="h-24 border-t-2 border-[#e76f51] flex items-center mt-12  ">
       <Container maxWidth="xl">
-        <div className="  text-stone-200 flex justify-between items-center">
-          <p className="text-sm">© 2025 Made by Hossein Kamali Rousta</p>
+        <div className="  text-stone-200 flex justify-between items-center max-sm:flex-col max-sm:">
+        
 
-          <div className="w-1/5">
+          <div className="w-1/5 max-sm:w-full max-sm:mt-6">
             <ul className=" flex items-center justify-between text-center text-sm font-thin">
               {socialMedia.map((item, index) => (
-                <li key={index}>
+                <li key={index} className={`${item.hoverClass} font`} >
                   <Link to={item.path}>{item.icon}</Link>
-                  <p >{item.title}</p>
+                  <p className="text-xs" >{item.title}</p>
                 </li>
               ))}
             </ul>
           </div>
+            <p className="text-sm mt-6">© 2025 Made by Hossein Kamali Rousta</p>
         </div>
       </Container>
     </div>
